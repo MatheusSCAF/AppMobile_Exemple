@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Searchbar</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)] = "nome" (ionInput)="filtrarItens()" ></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor = "let human of humans" >
+      {{human.nome}} {{human.idade}} anos
+
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Refresh</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-refresher slot ="fixed" (ionRefresh) = "atualizarMensagem($event)">
+<ion-refresher-content 
+pullingIcon="chevron-down-circle-outline"
+pullingText = "Pull to refresh"
+refreshingSpinner = "circles"
+refreshingText = "Update...">
+  
+</ion-refresher-content>
+</ion-refresher>
+<h2>Teste Refresher</h2>
+{{message}}
+</ion-content>

@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Select</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-list-header>Select simples</ion-list-header>
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-select placeholder="Select">
+        <ion-select-option value="M">Masculino</ion-select-option>
+        <ion-select-option value="F">Feminino</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Cor</ion-label>
+      <ion-select placeholder="Select" value="blue" okText="Ok" cancelText="Cancelar">
+        <ion-select-option value="pink">Rosa</ion-select-option>
+        <ion-select-option value="blue">Azul</ion-select-option>
+        <ion-select-option value="black">Preto</ion-select-option>
+      </ion-select>
+    </ion-item>
+</ion-list>
+<ion-list>
+  <ion-item>
+    <ion-label>Cor</ion-label>
+    <ion-select multiple ="true" placeholder="Select" value="blue" okText="Ok" cancelText="Cancelar">
+      <ion-select-option value="pink">Rosa</ion-select-option>
+      <ion-select-option value="blue">Azul</ion-select-option>
+      <ion-select-option value="black">Preto</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Animals</ion-label>
+    <ion-select multiple ="true">
+      <ion-select-option value="bird" selected>Pássaro</ion-select-option>
+      <ion-select-option value="cat">Gato</ion-select-option>
+      <ion-select-option value="dog" selected>Cão</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+
+<ion-list>
+  <ion-list-header>Customizado</ion-list-header>
+  <ion-item>
+    <ion-label>Alerta</ion-label>
+    <ion-select [interfaceOptions] ="customAlertOptions" interface="alert" placeholder="Select" >
+      <ion-select-option value="peperoni">Peperoni</ion-select-option>
+      <ion-select-option value="calabresa">Calabresa</ion-select-option>
+      <ion-select-option value="queijo">Queijo</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Popover</ion-label>
+    <ion-select [interfaceOptions] ="customPopoverOptions" interface="popover" placeholder="Select"  >
+      <ion-select-option value="peperoni">Peperoni</ion-select-option>
+      <ion-select-option value="calabresa">Calabresa</ion-select-option>
+      <ion-select-option value="queijo">Queijo</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>ActionSheet</ion-label>
+    <ion-select [interfaceOptions] ="customActionSheetOptions" interface="action-sheet" placeholder="Select"  >
+      <ion-select-option value="pink">Peperoni</ion-select-option>
+      <ion-select-option value="blue">Calabresa</ion-select-option>
+      <ion-select-option value="black">Queijo</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+</ion-list>
+
+</ion-content>
